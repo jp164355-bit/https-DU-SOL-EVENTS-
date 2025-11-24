@@ -68,9 +68,7 @@
     transition: background .3s;
   }
   .logout-fixed-btn:hover { background: #2d78d1; color:#fff; }
-  @media (max-width:650px) {
-    #dashboard-section, #organizer-section, #registration-section { padding:16px 10px; }
-    .event-card { flex-direction: column; gap:14px; }
+  @media (max-width:650px)
   }
   
   .chatbot-icon {
