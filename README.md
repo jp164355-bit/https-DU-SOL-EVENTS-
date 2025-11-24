@@ -68,7 +68,9 @@
     transition: background .3s;
   }
   .logout-fixed-btn:hover { background: #2d78d1; color:#fff; }
-  @media (max-width:650px)
+  @media (max-width:650px) {
+    #dashboard-section, #organizer-section, #registration-section { padding:16px 10px; }
+    .event-card { flex-direction: column; gap:14px; }
   }
   
   .chatbot-icon {
@@ -101,10 +103,6 @@
   <h1>Delhi University School of Open Learning Event Portal</h1>
   <img src="assets/images/du-campus.jpg" alt="Delhi University Campus" class="hero-img" />
 </header>
-
-<nav>
-  <button class="login-btn" onclick="document.getElementById('login-section').scrollIntoView()">Login / Register</button>
-</nav>
 
 <!-- LOGIN PAGE -->
 <section id="login-section">
