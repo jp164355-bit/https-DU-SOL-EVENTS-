@@ -99,7 +99,7 @@
 <body>
 
 <header>
-  <img src="<!-- Uploading "delhi-university-school-of-open-learning-du-sol-banner (1).webp"... -->" alt="DU SOL Logo" class="logo" />
+  <img src="![Image](https://github.com/user-attachments/assets/be0e5e85-36f3-4dd1-b6c8-6343f422e673)" alt="DU SOL Logo" class="logo" />
   <h1>Delhi University School of Open Learning Event Portal</h1>
   <img src="assets/images/du-campus.jpg" alt="Delhi University Campus" class="hero-img" />
 </header>
