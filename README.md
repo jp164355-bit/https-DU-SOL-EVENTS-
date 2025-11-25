@@ -99,7 +99,7 @@
 <body>
 
 <header>
-  <img src="https://github.com/user-attachments/assets/80d88c3f-793f-408f-b22f-b6c2a8b4031f" />
+  <img src="https://github.com/user-attachments/assets/4abc5761-14fa-4dca-8d36-c7ef8118590a" />
   <h1>Delhi University School of Open Learning Event Portal</h1>
   <img src="https://github.com/user-attachments/assets/be0e5e85-36f3-4dd1-b6c8-6343f422e673" class="hero-img" />
 </header>
