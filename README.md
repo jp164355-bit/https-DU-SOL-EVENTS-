@@ -122,10 +122,10 @@
   <h1> University of Delhi School of Open Learning</h1>
   <p class="hero-subtitle">Event Management Portal</p>
   <img src="https://github.com/user-attachments/assets/be0e5e85-36f3-4dd1-b6c8-6343f422e673" class="hero-img" alt="DU SOL Campus" />
+</header>
  <footer>
   &copy; 2025 - Delhi University School of Open Learning | Event Management Portal
 </footer>
-</header>
 
 <!-- LOGIN PAGE -->
 <section id="login-section">
