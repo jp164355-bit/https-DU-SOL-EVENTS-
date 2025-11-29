@@ -6,7 +6,6 @@
 <style>
   * { box-sizing: border-box; }
   body { margin:0; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif; background: linear-gradient(135deg, #f6f8fa 0%, #e9ecef 100%); line-height: 1.6; }
-  
   /* Header Enhancements */
   header { background: linear-gradient(135deg, #143058 0%, #1a3d6e 100%); padding:25px 20px; color:#fff; text-align:center; position: relative; overflow: hidden; }
   header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="75" cy="75" r="1.5" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>'); }
@@ -16,15 +15,13 @@
   .hero-subtitle { font-size:1.1em; opacity: 0.95; margin-bottom: 20px; }
   .hero-img { width:98vw; max-width:480px; max-height: 220px; object-fit: cover; border-radius:16px; box-shadow:0 12px 40px rgba(45,120,209,0.25); margin-top:18px; transition: transform 0.4s ease; }
   .hero-img:hover { transform: scale(1.02); }
-
-  /* Navigation & Buttons */
+ /* Navigation & Buttons */
   nav { margin:24px 0; }
   .login-btn { background: linear-gradient(135deg, #2d78d1 0%, #1e5fa5 100%); color:#fff; font-size:1.2em; font-weight: 600; padding:14px 36px; border-radius:12px; text-decoration:none; transition:all .3s cubic-bezier(0.4,0,0.2,1); cursor:pointer; border:none; box-shadow:0 4px 16px rgba(45,120,209,0.3); position: relative; overflow: hidden; }
   .login-btn::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); transition: left 0.5s; }
   .login-btn:hover::before { left: 100%; }
   .login-btn:hover { background: linear-gradient(135deg, #fdc801 0%, #ffb800 100%); color:#143058; transform: translateY(-2px); box-shadow:0 8px 24px rgba(253,200,1,0.4); }
-
-  /* Login Section */
+ /* Login Section */
   #login-section { background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); max-width:380px; margin:40px auto 24px; box-shadow:0 12px 48px rgba(20,48,88,0.15); border-radius:20px; text-align:center; padding:32px 20px; border:1px solid rgba(255,255,255,0.3); }
   .login-choice { display:flex; gap:24px; justify-content:center; margin-bottom:24px; flex-wrap: wrap; }
   .role-btn { width:82px; height:82px; background: linear-gradient(135deg, #2d78d1 0%, #1e5fa5 100%); color:#fff; font-size:1.1em; font-weight: 600; border-radius:50%; border:none; cursor:pointer; transition:all .3s cubic-bezier(0.4,0,0.2,1); box-shadow:0 6px 20px rgba(45,120,209,0.3); position: relative; }
@@ -36,15 +33,13 @@
   input:focus, select:focus { outline: none; border-color: #2d78d1; box-shadow: 0 0 0 3px rgba(45,120,209,0.1); transform: translateY(-1px); }
   .submit-btn { background: linear-gradient(135deg, #2d78d1 0%, #1e5fa5 100%); color:#fff; padding:14px 0; width:100%; border:none; font-size:1.15em; font-weight: 600; border-radius:12px; margin-top:12px; cursor:pointer; transition:all .3s cubic-bezier(0.4,0,0.2,1); box-shadow:0 6px 20px rgba(45,120,209,0.3); }
   .submit-btn:hover { background: linear-gradient(135deg, #fdc801 0%, #ffb800 100%); color:#143058; transform: translateY(-2px); box-shadow:0 10px 30px rgba(253,200,1,0.4); }
-
-  /* Dashboard Sections */
+ /* Dashboard Sections */
   #dashboard-section, #organizer-section, #registration-section, #help-center { display:none; background: rgba(255,255,255,0.97); backdrop-filter: blur(20px); border-radius:24px; box-shadow:0 16px 64px rgba(20,48,88,0.12); max-width:780px; margin:50px auto 28px; padding:32px 28px; border:1px solid rgba(255,255,255,0.4); }
   .dash-header { display:flex; gap:20px; align-items:center; margin-bottom:20px; position: relative; padding-bottom: 16px; border-bottom: 2px solid #f0f4f8; }
   .icon { width:52px; height:52px; background: linear-gradient(135deg, #fdc801 0%, #ffb800 100%); color:#143058; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.8em; box-shadow:0 6px 24px rgba(253,200,1,0.4); cursor:pointer; transition:all 0.3s ease; position: relative; }
   .icon:hover { transform: scale(1.1) rotate(5deg); box-shadow:0 10px 32px rgba(253,200,1,0.5); }
   .role-show { margin-left:auto; font-size:1.15em; color:#2d78d1; font-weight: 700; user-select:none; background: linear-gradient(135deg, #2d78d1, #1e5fa5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-
-  /* Event Cards & Lists */
+/* Event Cards & Lists */
   .location-list, .event-list, #eventsContainer { margin-top:24px; }
   .event-card { background: linear-gradient(135deg, #f8f9ff 0%, #f6f8fa 100%); border-radius:20px; box-shadow:0 8px 32px rgba(45,120,209,0.12); margin-bottom:28px; display:flex; align-items:flex-start; gap:24px; padding:24px; transition:all 0.4s cubic-bezier(0.4,0,0.2,1); border:1px solid rgba(45,120,209,0.1); position: relative; overflow: hidden; }
   .event-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #2d78d1, #fdc801, #2d78d1); }
@@ -62,8 +57,7 @@
   .register-btn:hover { background: linear-gradient(135deg, #fdc801 0%, #ffb800 100%); color:#143058; transform: translateY(-2px); box-shadow:0 6px 20px rgba(253,200,1,0.3); }
   .delete-btn { background: linear-gradient(135deg, #fd5050 0%, #e63946 100%); color:#fff; margin-top:12px; }
   .delete-btn:hover { transform: translateY(-2px); box-shadow:0 6px 20px rgba(253,80,80,0.4); }
-
-  /* Forms */
+ /* Forms */
   #organizer-section h2, #registration-section h2, #help-center h2 { margin-bottom: 24px; font-size: 1.8em; color: #143058; text-align: center; position: relative; }
   #organizer-section h2::after, #registration-section h2::after, #help-center h2::after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: linear-gradient(90deg, #2d78d1, #fdc801); border-radius: 2px; }
   form#eventForm, form#registrationForm { display:flex; flex-direction:column; gap:18px; }
@@ -74,8 +68,7 @@
   form input:focus, form textarea:focus, form select:focus { outline: none; border-color: #2d78d1; box-shadow: 0 0 0 3px rgba(45,120,209,0.1); }
   form button { background: linear-gradient(135deg, #2d78d1 0%, #1e5fa5 100%); color:#fff; border:none; padding:16px; border-radius:12px; cursor:pointer; font-size:1.15em; font-weight: 600; transition:all .3s cubic-bezier(0.4,0,0.2,1); box-shadow:0 6px 20px rgba(45,120,209,0.3); }
   form button:hover { background: linear-gradient(135deg, #fdc801 0%, #ffb800 100%); color:#143058; transform: translateY(-2px); box-shadow:0 12px 32px rgba(253,200,1,0.4); }
-
-  /* Help Center */
+/* Help Center */
   .help-center-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 24px; }
   .help-card { background: linear-gradient(135deg, #f8f9ff 0%, #f6f8fa 100%); border-radius: 16px; padding: 24px; box-shadow: 0 8px 32px rgba(45,120,209,0.1); border: 1px solid rgba(45,120,209,0.15); transition: all 0.3s ease; cursor: pointer; }
   .help-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(45,120,209,0.2); }
@@ -84,16 +77,14 @@
   .help-desc { color: #5a6c7d; line-height: 1.6; }
   .search-help { width: 100%; padding: 14px 18px; border-radius: 12px; border: 2px solid #e1e8ed; font-size: 1.05em; margin-bottom: 24px; }
   .search-help:focus { outline: none; border-color: #2d78d1; box-shadow: 0 0 0 3px rgba(45,120,209,0.1); }
-
-  /* Logout Button */
+ /* Logout Button */
   .logout-fixed-btn {
     position: fixed; top: 24px; right: 24px; background: linear-gradient(135deg, #fdc801 0%, #ffb800 100%);
     color: #143058; padding: 14px 24px; border: none; border-radius: 30px; font-weight: 700; font-size: 1em;
     cursor: pointer; box-shadow: 0 8px 24px rgba(253,200,1,0.4); z-index: 10001; transition: all .3s ease;
   }
   .logout-fixed-btn:hover { background: linear-gradient(135deg, #2d78d1 0%, #1e5fa5 100%); color:#fff; transform: translateY(-2px); box-shadow:0 12px 32px rgba(45,120,209,0.5); }
-
-  /* Chatbot Enhancements */
+/* Chatbot Enhancements */
   .chatbot-icon {
     position: fixed; right: 24px; bottom: 24px; font-size: 2.2em; background: linear-gradient(135deg, #2d78d1, #1e5fa5);
     color: #fff; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;
@@ -110,8 +101,7 @@
   .chatbox input { width: 65%; padding: 12px 16px; margin-right: 12px; border-radius: 12px; border:2px solid #e1e8ed; outline:none; font-size: 1em; }
   .chatbox button { padding: 12px 20px; background:linear-gradient(135deg, #2d78d1, #1e5fa5); color:#fff; border:none; border-radius: 12px; cursor: pointer; font-weight: 600; transition: all 0.3s ease; }
   .chatbox button:hover { background:linear-gradient(135deg, #fdc801, #ffb800); color:#143058; transform: translateY(-1px); }
-
-  /* Responsive */
+/* Responsive */
   @media (max-width:768px) {
     .login-choice { flex-direction: column; align-items: center; gap: 16px; }
     #dashboard-section, #organizer-section, #registration-section, #help-center { margin: 24px 16px; padding: 24px 20px; }
@@ -120,8 +110,7 @@
     .logout-fixed-btn { top: 20px; right: 20px; padding: 12px 20px; font-size: 0.95em; }
     .chatbox { width: calc(100vw - 48px); right: 24px; bottom: 90px; }
   }
-
-  /* Animations */
+/* Animations */
   @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
   .event-card, .help-card { animation: fadeInUp 0.6s ease forwards; }
 </style>
@@ -130,7 +119,7 @@
 
 <header>
   <img src="https://github.com/user-attachments/assets/4abc5761-14fa-4dca-8d36-c7ef8118590a" class="logo" alt="DU SOL Logo" />
-  <h1>Delhi University School of Open Learning</h1>
+  <h1> University of Delhi School of Open Learning</h1>
   <p class="hero-subtitle">Event Management Portal</p>
   <img src="https://github.com/user-attachments/assets/be0e5e85-36f3-4dd1-b6c8-6343f422e673" class="hero-img" alt="DU SOL Campus" />
 </header>
@@ -167,19 +156,19 @@
     <label for="idCard">🆔 Upload ID Card Photo *</label>
     <input type="file" id="idCard" accept="image/*" required />
     
-    <label for="studentName">👤 Full Name *</label>
+   <label for="studentName">👤 Full Name *</label>
     <input type="text" id="studentName" required />
     
-    <label for="rollNumber">🎫 Roll Number *</label>
+   <label for="rollNumber">🎫 Roll Number *</label>
     <input type="text" id="rollNumber" required />
     
-    <label for="phoneNumber">📱 Phone Number *</label>
+   <label for="phoneNumber">📱 Phone Number *</label>
     <input type="tel" id="phoneNumber" required />
     
-    <label for="emailAddress">✉️ Email Address *</label>
+   <label for="emailAddress">✉️ Email Address *</label>
     <input type="email" id="emailAddress" required />
     
-    <label for="studentYear">📚 Student Year *</label>
+   <label for="studentYear">📚 Student Year *</label>
     <select id="studentYear" required>
       <option value="" disabled selected>Select Academic Year</option>
       <option value="1st Year">1st Year</option>
@@ -188,7 +177,7 @@
       <option value="4th Year">4th Year</option>
     </select>
     
-    <button type="submit">✅ Submit Registration</button>
+   <button type="submit">✅ Submit Registration</button>
   </form>
 </section>
 
@@ -201,19 +190,19 @@
     <label for="eventName">🎯 Event Name</label>
     <input type="text" id="eventName" placeholder="e.g., Annual Cultural Fest" required />
     
-    <label for="eventDate">📅 Event Date</label>
+   <label for="eventDate">📅 Event Date</label>
     <input type="date" id="eventDate" required />
     
-    <label for="eventLocation">📍 Venue Location</label>
+   <label for="eventLocation">📍 Venue Location</label>
     <input type="text" id="eventLocation" placeholder="e.g., North Campus, DU SOL Center" required />
     
-    <label for="eventDesc">📄 Event Description</label>
+   <label for="eventDesc">📄 Event Description</label>
     <textarea id="eventDesc" rows="4" placeholder="Describe your event, schedule, activities..." required></textarea>
     
-    <label for="eventImage">🖼️ Event Banner Image</label>
+   <label for="eventImage">🖼️ Event Banner Image</label>
     <input type="file" id="eventImage" accept="image/*" />
     
-    <button type="submit">➕ Create New Event</button>
+   <button type="submit">➕ Create New Event</button>
   </form>
   
   <h3 style="margin:28px 0 20px 0;">📋 Existing Events</h3>
@@ -232,31 +221,31 @@
       <div class="help-desc">Login as Organizer or Student using your SOL College ID (SOLXXXXXXXX format).</div>
     </div>
     
-    <div class="help-card" onclick="showHelpDetail('student')">
+   <div class="help-card" onclick="showHelpDetail('student')">
       <span class="help-icon">🎓</span>
       <div class="help-title">Student Features</div>
       <div class="help-desc">Browse events, register with ID proof, view campus maps & get notifications.</div>
     </div>
     
-    <div class="help-card" onclick="showHelpDetail('organizer')">
+   <div class="help-card" onclick="showHelpDetail('organizer')">
       <span class="help-icon">👥</span>
       <div class="help-title">Organizer Tools</div>
       <div class="help-desc">Create events with images, manage listings, delete events & track registrations.</div>
     </div>
     
-    <div class="help-card" onclick="showHelpDetail('register')">
+   <div class="help-card" onclick="showHelpDetail('register')">
       <span class="help-icon">📝</span>
       <div class="help-title">Event Registration</div>
       <div class="help-desc">Complete registration form with ID photo, personal details & academic year.</div>
     </div>
     
-    <div class="help-card" onclick="showHelpDetail('campus')">
+   <div class="help-card" onclick="showHelpDetail('campus')">
       <span class="help-icon">📍</span>
       <div class="help-title">Campus Maps</div>
       <div class="help-desc">Interactive Google Maps links for North Campus, SOL Center & other venues.</div>
     </div>
     
-    <div class="help-card" onclick="showHelpDetail('contact')">
+   <div class="help-card" onclick="showHelpDetail('contact')">
       <span class="help-icon">📞</span>
       <div class="help-title">Contact Support</div>
       <div class="help-desc">DU SOL Admin: events@sol.du.ac.in | Emergency: +91-XXXXXXXXXX</div>
