@@ -209,7 +209,7 @@
   <div id="eventsContainer"></div>
 </section>
  <footer>
-  &copy; 2025 - Delhi University School of Open Learning | Event Management Portal
+         &copy; 2025 - University of Delhi School of Open Learning | Event Management Portal
 </footer>
 <!-- HELP CENTER -->
 <section id="help-center">
