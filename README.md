@@ -534,9 +534,6 @@
     helpCenterSection.style.display = 'none';
     fixedLogoutBtn.style.display = 'none';
     userRoleDisp.textContent = '';
-   <footer>
-  &copy; 2025 - Delhi University School of Open Learning | Event Management Portal
-</footer>
   }
 
   // Enhanced Chatbot
@@ -578,6 +575,9 @@
         'map': '🗺️ Click "View Campus Map" on any event for Google Maps directions',
         'delete': '🗑️ Organizers: Click DELETE button on event card in dashboard',
         'help': '🆘 Click location icon (📍) or help icon (🆘) in dashboard for Help Center'
+          <footer>
+  &copy; 2025 - Delhi University School of Open Learning | Event Management Portal
+</footer>
       };
       
       const response = Object.keys(responses).find(key => val.includes(key)) || 'ℹ️ For detailed help, use Help Center (📍 icon) or contact support!';
