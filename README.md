@@ -534,6 +534,9 @@
     helpCenterSection.style.display = 'none';
     fixedLogoutBtn.style.display = 'none';
     userRoleDisp.textContent = '';
+   <footer>
+  &copy; 2025 - Delhi University School of Open Learning | Event Management Portal
+</footer>
   }
 
   // Enhanced Chatbot
