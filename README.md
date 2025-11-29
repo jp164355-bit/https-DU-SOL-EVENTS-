@@ -123,9 +123,6 @@
   <p class="hero-subtitle">Event Management Portal</p>
   <img src="https://github.com/user-attachments/assets/be0e5e85-36f3-4dd1-b6c8-6343f422e673" class="hero-img" alt="DU SOL Campus" />
 </header>
- <footer>
-  &copy; 2025 - Delhi University School of Open Learning | Event Management Portal
-</footer>
 
 <!-- LOGIN PAGE -->
 <section id="login-section">
@@ -211,7 +208,9 @@
   <h3 style="margin:28px 0 20px 0;">📋 Existing Events</h3>
   <div id="eventsContainer"></div>
 </section>
-
+ <footer>
+  &copy; 2025 - Delhi University School of Open Learning | Event Management Portal
+</footer>
 <!-- HELP CENTER -->
 <section id="help-center">
   <h2>🆘 Help Center</h2>
